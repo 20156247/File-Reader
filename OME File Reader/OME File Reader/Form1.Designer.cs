@@ -38,10 +38,10 @@
             // heading
             // 
             this.heading.AutoSize = true;
-            this.heading.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.heading.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.heading.Location = new System.Drawing.Point(247, 20);
             this.heading.Name = "heading";
-            this.heading.Size = new System.Drawing.Size(283, 55);
+            this.heading.Size = new System.Drawing.Size(284, 56);
             this.heading.TabIndex = 0;
             this.heading.Text = "File Reader";
             // 
