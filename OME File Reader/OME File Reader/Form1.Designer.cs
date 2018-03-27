@@ -51,7 +51,7 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(417, 200);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Content will be displayed here";
+            this.richTextBox1.Text = "Checking if my own branch changes works";
             // 
             // selectBtn
             // 
