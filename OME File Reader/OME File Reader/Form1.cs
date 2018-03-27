@@ -20,14 +20,14 @@ namespace OME_File_Reader
 
         private void selectBtn_Click(object sender, EventArgs e)
         {
-            Stream filename;
+            Stream file1;
 
 
             OpenFileDialog dlg = new OpenFileDialog();
 
             if(dlg.ShowDialog()==DialogResult.OK)
             {
-                if((filename=dlg.OpenFile()) !=null)
+                if((file1=dlg.OpenFile()) !=null)
                 {
                     string filePathName;
                     filePathName = dlg.FileName;
