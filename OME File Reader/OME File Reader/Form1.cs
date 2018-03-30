@@ -16,5 +16,15 @@ namespace OME_File_Reader
         {
             InitializeComponent();
         }
+
+        private void selectFileBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void readBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
