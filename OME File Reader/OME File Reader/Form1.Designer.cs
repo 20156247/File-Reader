@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.heading = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.selectFileBtn = new System.Windows.Forms.Button();
             this.readBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -44,13 +44,13 @@
             this.heading.TabIndex = 0;
             this.heading.Text = "File Reader";
             // 
-            // richTextBox1
+            // richTextBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(51, 96);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(688, 236);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.richTextBox.Location = new System.Drawing.Point(51, 96);
+            this.richTextBox.Name = "richTextBox";
+            this.richTextBox.Size = new System.Drawing.Size(688, 236);
+            this.richTextBox.TabIndex = 1;
+            this.richTextBox.Text = "";
             // 
             // selectFileBtn
             // 
@@ -82,7 +82,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.readBtn);
             this.Controls.Add(this.selectFileBtn);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.richTextBox);
             this.Controls.Add(this.heading);
             this.Name = "Form1";
             this.Text = "OME File Reader Lite";
@@ -94,7 +94,7 @@
         #endregion
 
         private System.Windows.Forms.Label heading;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBox;
         private System.Windows.Forms.Button selectFileBtn;
         private System.Windows.Forms.Button readBtn;
     }
