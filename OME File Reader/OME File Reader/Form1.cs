@@ -30,7 +30,7 @@ namespace OME_File_Reader
             {
                 //to enable program to read the text from file
                 //gave any name to stream reader object as long as its not reserved
-                StreamReader readFile = new StreamReader(FileDialog.OpenRead(ofdlg.FileName));
+                StreamReader readFile = new StreamReader(File.OpenRead(ofdlg.FileName));
 
                 //enable the rich text box to display content in selected opened text file
                 richTextBox.Text = readFile.ReadToEnd();
