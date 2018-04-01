@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             this.heading = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.selectBtn = new System.Windows.Forms.Button();
+            this.richTextBox = new System.Windows.Forms.RichTextBox();
+            this.selectFileBtn = new System.Windows.Forms.Button();
             this.readBtn = new System.Windows.Forms.Button();
-            this.displayBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // heading
@@ -45,44 +44,37 @@
             this.heading.TabIndex = 0;
             this.heading.Text = "File Reader";
             // 
-            // richTextBox1
+            // richTextBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(175, 96);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(417, 200);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Checking if my own branch changes works";
+            this.richTextBox.Location = new System.Drawing.Point(51, 96);
+            this.richTextBox.Name = "richTextBox";
+            this.richTextBox.Size = new System.Drawing.Size(688, 236);
+            this.richTextBox.TabIndex = 1;
+            this.richTextBox.Text = "";
             // 
-            // selectBtn
+            // selectFileBtn
             // 
-            this.selectBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectBtn.Location = new System.Drawing.Point(175, 338);
-            this.selectBtn.Name = "selectBtn";
-            this.selectBtn.Size = new System.Drawing.Size(114, 43);
-            this.selectBtn.TabIndex = 2;
-            this.selectBtn.Text = "Select File";
-            this.selectBtn.UseVisualStyleBackColor = true;
-            this.selectBtn.Click += new System.EventHandler(this.selectBtn_Click);
+
+            this.selectFileBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectFileBtn.Location = new System.Drawing.Point(51, 365);
+            this.selectFileBtn.Name = "selectFileBtn";
+            this.selectFileBtn.Size = new System.Drawing.Size(114, 43);
+            this.selectFileBtn.TabIndex = 2;
+            this.selectFileBtn.Text = "Select File";
+            this.selectFileBtn.UseVisualStyleBackColor = true;
+            this.selectFileBtn.Click += new System.EventHandler(this.selectFileBtn_Click);
+
             // 
             // readBtn
             // 
             this.readBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.readBtn.Location = new System.Drawing.Point(325, 338);
+            this.readBtn.Location = new System.Drawing.Point(190, 365);
             this.readBtn.Name = "readBtn";
             this.readBtn.Size = new System.Drawing.Size(114, 43);
             this.readBtn.TabIndex = 3;
             this.readBtn.Text = "Read";
             this.readBtn.UseVisualStyleBackColor = true;
-            // 
-            // displayBtn
-            // 
-            this.displayBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayBtn.Location = new System.Drawing.Point(478, 338);
-            this.displayBtn.Name = "displayBtn";
-            this.displayBtn.Size = new System.Drawing.Size(114, 43);
-            this.displayBtn.TabIndex = 4;
-            this.displayBtn.Text = "Display";
-            this.displayBtn.UseVisualStyleBackColor = true;
+            this.readBtn.Click += new System.EventHandler(this.readBtn_Click);
             // 
             // Form1
             // 
@@ -90,13 +82,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.displayBtn);
             this.Controls.Add(this.readBtn);
-            this.Controls.Add(this.selectBtn);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.selectFileBtn);
+            this.Controls.Add(this.richTextBox);
             this.Controls.Add(this.heading);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "OME File Reader Lite";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,10 +96,9 @@
         #endregion
 
         private System.Windows.Forms.Label heading;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button selectBtn;
+        private System.Windows.Forms.RichTextBox richTextBox;
+        private System.Windows.Forms.Button selectFileBtn;
         private System.Windows.Forms.Button readBtn;
-        private System.Windows.Forms.Button displayBtn;
     }
 }
 
