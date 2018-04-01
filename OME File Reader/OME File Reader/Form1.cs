@@ -47,6 +47,7 @@ namespace OME_File_Reader
             string readText;
             readText = richTextBox.Text;
             MessageBox.Show(readText, "Loaded Text Being Read", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
     }
 }

@@ -54,6 +54,7 @@
             // 
             // selectFileBtn
             // 
+
             this.selectFileBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectFileBtn.Location = new System.Drawing.Point(51, 365);
             this.selectFileBtn.Name = "selectFileBtn";
@@ -62,6 +63,7 @@
             this.selectFileBtn.Text = "Select File";
             this.selectFileBtn.UseVisualStyleBackColor = true;
             this.selectFileBtn.Click += new System.EventHandler(this.selectFileBtn_Click);
+
             // 
             // readBtn
             // 
