@@ -65,17 +65,7 @@
             this.selectFileBtn.Click += new System.EventHandler(this.selectFileBtn_Click);
 
             // 
-            // readBtn
-            // 
-            this.readBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.readBtn.Location = new System.Drawing.Point(190, 365);
-            this.readBtn.Name = "readBtn";
-            this.readBtn.Size = new System.Drawing.Size(114, 43);
-            this.readBtn.TabIndex = 3;
-            this.readBtn.Text = "Read";
-            this.readBtn.UseVisualStyleBackColor = true;
-            this.readBtn.Click += new System.EventHandler(this.readBtn_Click);
-            // 
+
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
