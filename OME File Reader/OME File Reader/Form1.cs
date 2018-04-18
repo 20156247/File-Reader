@@ -41,13 +41,6 @@ namespace OME_File_Reader
 
         }
 
-        //To read text file content in rich textbox via message box 
-        private void readBtn_Click(object sender, EventArgs e)
-        {
-            string readText;
-            readText = richTextBox.Text;
-            MessageBox.Show(readText, "Loaded Text Being Read", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-        }
     }
 }
