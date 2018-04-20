@@ -302,6 +302,7 @@ namespace OME_File_Reader
                 richTextBox.SelectionBackColor = Color.Yellow;
                 //After a match is found the index is increased so the search won't stop at the same match again.i.e it will search for similiar match.
                 index = richTextBox.Text.IndexOf(searchTxtBox.Text, index) + 1;
+               
             }
         }
 
@@ -535,6 +536,25 @@ namespace OME_File_Reader
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             richTextBox.SelectedText = string.Empty;
+        }
+
+       private void searchTxtBox_Click(object sender, EventArgs e)
+        {
+            int index = 0;
+            String temp = richTextBox.Text;
+            richTextBox.Text = "";
+            richTextBox.Text = temp;
+
+            while (index < richTextBox.Text.LastIndexOf(searchTxtBox.Text))
+            {
+                //Searches the text in a RichTextBox control for a string within a range of texts.
+                richTextBox.Find(searchTxtBox.Text, index, richTextBox.TextLength, RichTextBoxFinds.None);
+                //Colour Selection.This is added automatically when a match is found.
+                richTextBox.SelectionBackColor = Color.Yellow;
+                //After a match is found the index is increased so the search won't stop at the same match again.i.e it will search for similiar match.
+                index = richTextBox.Text.IndexOf(searchTxtBox.Text, index) + 1;
+               
+            }
         }
 
     }
